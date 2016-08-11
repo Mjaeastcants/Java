@@ -1,0 +1,27 @@
+package excercises;
+
+public class HWAssignment2FibanacciNumbers 
+{
+	public static void main (String args [])
+	{
+		double previous = 0;
+		double current = 1;
+		double next = previous + current;
+		System.out.println(previous);
+		System.out.println(current);
+		for(int a = 1; a <= 98; a++)
+		{
+			next = previous + current;
+			System.out.println(next);
+			previous= current;
+			current = next;
+		}
+		while(next >= 10)
+		{
+			next = current / 10;
+			System.out.println(next);
+			current = next;
+		}
+	}
+}
+//next = current / 10
